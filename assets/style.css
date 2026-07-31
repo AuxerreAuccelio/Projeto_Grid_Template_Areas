@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body{
+    height: 100dvh;
+    display: grid;
+    grid-template-areas: "menuu conversaa mainn" ;
+    grid-template-columns: 0.3fr 1fr 3fr ;
+}
+
+aside{
+    background-color: blueviolet;
+    grid-area: menuu;
+}
+
+section{
+    background-color: crimson;
+    grid-area: conversaa;
+}
+
+main{
+    background-color: green;
+    grid-area: mainn;
+}
