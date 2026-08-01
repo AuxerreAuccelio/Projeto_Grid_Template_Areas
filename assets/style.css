@@ -53,7 +53,94 @@ nav{
 section{
     background-color: #FFFFFF;
     grid-area: conversaa;
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+.container_conversa{
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo_whatsapp{
+    color: green;
+    padding: 10px;
+    font-size: 25px;
+    font-family: verdana;
+}
+
+.icones_whatsapp{
+    padding: 20px;
+}
+
+.pesquisa_agrupado{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.pesquisa{
+    background-color: #F6F5F4;
+    border-radius: 55px;
+}
+
+form{
+    padding: 10px;
+}
+
+.input_pesquisa{
+    /* background-color: crimson; */
+    border: transparent;
+    outline: none;
+    appearance: none;
+    padding: 12px 16px;
+    width: 50%;
+    border-radius: 20px;
+    color: #858181;
+    background-color: #f6f4f4;
+}
+
+.input_pesquisa:focus{
+    border: 1px solid #33a961;
+}
+
+.botoes_status_whatsapp{
+    /* background-color: crimson; */
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 12px;
+}
+
+
+.status_whatsapp{
+    background-color: #9cf3bd;
+    /* display: flex;
+    justify-content: space-between; */
+    border-radius: 20px;
+    border: none;
+    padding: 10px 12px;
+}
+
+
+
+
+
+
+
+
+
 
 main{
     background-color: green;
