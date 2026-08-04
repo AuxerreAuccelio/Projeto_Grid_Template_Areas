@@ -144,6 +144,11 @@ form {
   grid-template-columns: 60px 1fr min-content;
 }
 
+.contatos:hover{
+  background-color: #f6f5f4;
+  cursor: pointer;
+}
+
 .contatos > img {
   /* height: 100px; */
   width: 50px;
