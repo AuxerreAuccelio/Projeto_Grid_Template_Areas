@@ -1,136 +1,210 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
 }
 
-body{
-    height: 100dvh;
-    display: grid;
-    grid-template-areas: "menuu conversaa mainn" ;
-    grid-template-columns: 60px 1fr 2fr ;
-
-    
+body {
+  height: 100dvh;
+  display: grid;
+  grid-template-areas: "menuu conversaa mainn";
+  grid-template-columns: 60px 460px 2fr;
 }
 
-nav{
-    background-color: #f7f5f2;
-    grid-area: menuu;
+nav {
+  background-color: #f7f2f6;
+  grid-area: menuu;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 10px;
-    gap: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  gap: 16px;
 }
 
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.container img{
-    /* background-color: orange; */
-    border-radius: 100%;
-    padding: 7px;
-    gap: 16px;
-    width: 40px;
+.container img {
+  /* background-color: orange; */
+  border-radius: 100%;
+  padding: 7px;
+  gap: 16px;
+  width: 40px;
 }
 
-.container img:hover{
-    background-color: rgb(63, 223, 63);
-    border-radius: 100%;
-    padding: 7px;
-    gap: 16px;
-    width: 40px;
+.container img:hover {
+  background-color: rgb(63, 223, 63);
+  border-radius: 100%;
+  padding: 7px;
+  gap: 16px;
+  width: 40px;
 }
 
+section {
+  background-color: #ffffff;
+  grid-area: conversaa;
+  margin-left: 15px;
 
-
-section{
-    background-color: #FFFFFF;
-    grid-area: conversaa;
-
-
+  overflow-y: scroll; /* scroll na seção */
 }
 
-
-
-
-
-
-
-
-
-
-
-.container_conversa{
-    display: flex;
-    flex-direction: column;
+.container_conversa { 
+  display: flex;
+  flex-direction: column;
+  
 }
 
-.titulo_whatsapp{
-    color: green;
-    padding: 10px;
-    font-size: 25px;
-    font-family: verdana;
+.titulo_whatsapp {
+  color: green;
+  padding: 10px;
+  font-size: 25px;
+  font-family: verdana;
 }
 
-.icones_whatsapp{
-    padding: 20px;
+.icones_whatsapp {
+  padding: 20px;
 }
 
-.pesquisa_agrupado{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.pesquisa_agrupado {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.pesquisa{
-    background-color: #F6F5F4;
-    border-radius: 55px;
+.pesquisa {
+  background-color: #f6f5f4;
+  border-radius: 55px;
 }
 
-form{
-    padding: 10px;
+form {
+  padding: 10px;
 }
 
-.input_pesquisa{
-    /* background-color: crimson; */
-    border: transparent;
-    outline: none;
-    appearance: none;
-    padding: 12px 16px;
-    width: 50%;
-    border-radius: 20px;
-    color: #858181;
-    background-color: #f6f4f4;
+.input_pesquisa {
+  /* background-color: crimson; */
+  border: transparent;
+  outline: none;
+  appearance: none;
+  padding: 12px 16px;
+  width: 50%;
+  border-radius: 20px;
+  color: #858181;
+  background-color: #f6f4f4;
 }
 
-.input_pesquisa:focus{
-    border: 1px solid #33a961;
+.input_pesquisa:focus {
+  border: 1px solid #33a961;
 }
 
-.botoes_status_whatsapp{
-    /* background-color: crimson; */
-    display: flex;
-    justify-content: space-between;
-    border-radius: 20px;
-    border: none;
-    padding: 10px 12px;
+.botoes_status_whatsapp {
+  /* background-color: crimson; */
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+  border: none;
+  padding: 10px 12px;
 }
 
-
-.status_whatsapp{
-    background-color: #9cf3bd;
-    /* display: flex;
+.status_whatsapp {
+  background-color: #FFF;
+  /* display: flex;
     justify-content: space-between; */
-    border-radius: 20px;
-    border: none;
-    padding: 10px 12px;
+  border-radius: 20px;
+  border: none;
+  padding: 10px 12px;
+}
+
+
+.status_whatsapp:hover {
+  background-color: #9cf3bd;
+  cursor: pointer;
+  /* border-radius: 50%; */
+  padding: 7px;
+  gap: 16px;
+  width: 40px;
+}
+
+
+
+
+
+
+.contatos {
+  /* background-color: orange; */
+  margin-top: 50px;
+  display: grid;
+  grid-template-areas:
+    "fotoo nomee horario_mensagem"
+    "fotoo mensagem_recebida popupp";
+  grid-template-columns: 60px 1fr min-content;
+}
+
+.contatos > img {
+  /* height: 100px; */
+  width: 50px;
+  grid-area: fotoo; 
+  border-radius: 100%;
+
+  /* grid-column: 1; */
+  /* grid-row: 1 / -1; */
+}
+
+.nome {
+  grid-area: nomee;
+  /* grid-column: 2; */
+
+  display: flex;
+  text-align: left;  
+  justify-self: start;
+  margin: 0;
+}
+
+.texto {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+    
+  color: #6F6F6C;
+
+  grid-area: mensagem_recebida;
+  text-align: center;
+  align-items: center;
+}
+
+.horario { 
+  color: #33a961;;
+  grid-area: horario_mensagem;  
+  /* grid-column: 3; */
+  /* grid-row: 1; */
+
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.quantidade_notificacao{ 
+  background-color: #33a961;
+  color: #FFF;
+  width: fit-content;
+  border-radius: 100%;
+  padding: 8px;
+  
+  grid-area: popupp;  
+  /* grid-column: 3 / 4; */
+
+  display: flex;  
+  text-align: center; 
+  align-items: center;
+  justify-content: center;
+  place-self: center; /* para alinhar o parágrafo das notificações */
+
 }
 
 
@@ -142,7 +216,7 @@ form{
 
 
 
-main{
-    background-color: green;
-    grid-area: mainn;
+main {
+  background-color: green;
+  grid-area: mainn;
 }
