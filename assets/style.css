@@ -51,13 +51,14 @@ section {
   grid-area: conversaa;
   margin-left: 15px;
 
-  overflow-y: scroll; /* scroll na seção */
+  height: 100dvh; /* scroll na seção */
 }
 
 .container_conversa { 
   display: flex;
-  flex-direction: column;
-  
+  flex-direction: column;  
+
+  height: 100dvh; /* scroll na seção - parte principal */
 }
 
 .titulo_whatsapp {
@@ -134,6 +135,12 @@ form {
 
 
 
+.todos_contatos{
+  /* background-color: orange; */
+  overflow-y: scroll; /*  scroll na seção */
+  min-height: 0;
+}
+
 .contatos {
   /* background-color: orange; */
   margin-top: 50px;
@@ -141,7 +148,7 @@ form {
   grid-template-areas:
     "fotoo nomee horario_mensagem"
     "fotoo mensagem_recebida popupp";
-  grid-template-columns: 60px 1fr min-content;
+  grid-template-columns: 60px 1fr min-content;  
 }
 
 .contatos:hover{
