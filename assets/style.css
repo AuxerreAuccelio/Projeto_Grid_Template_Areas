@@ -46,7 +46,7 @@ nav {
   width: 40px;
 }
 
-section {
+section.talk {
   background-color: #ffffff;
   grid-area: conversaa;
   margin-left: 15px;
@@ -228,6 +228,87 @@ form {
 
 
 main {
-  background-color: green;
+  /* background-color: green; */
+  background-image: url(./imgs/whatsapp_bg.png);
   grid-area: mainn;
+
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
 }
+
+header{
+  background-color: white;
+  border-left: 1px solid #EEE;
+  padding: 10px;
+}
+
+.img_main{
+  display: flex;
+gap: 10px;
+align-items: center;
+}
+
+.img_main p{
+  font-size: x-large;
+  font-weight: 600;
+}
+
+.foto_contato_header{
+  width: 50px;
+  border-radius: 100%;
+}
+
+.grid_msg{
+  /* height:  100dvh; */
+
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  margin-top: auto;
+  row-gap: 10px;
+
+  overflow-y: auto;
+}
+
+#input_send_msg{
+  background-color: white;
+  /* margin-top: auto; */
+
+  border: transparent;
+  outline: none;
+  appearance: none;
+  padding: 12px 16px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.recebidas{
+  grid-column: 2 /14;
+  background-color: #F7F5F2;
+  
+}
+
+.enviadas{
+  background-color: #D8F8D2;
+  grid-column: 10 / 24;
+  justify-self: right;
+}
+
+.enviadas, .recebidas {  
+  padding: 5px 10px;
+  border-radius: 10px;
+  
+}
+
+.h_recebidas, .h_enviadas{
+  /* grid-column: 19 / 20; */
+  white-space: nowrap;
+}
+
+.parle{
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 10px;
+}
+
